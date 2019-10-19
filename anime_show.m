@@ -1,8 +1,9 @@
 function  anime_show(clouds,timestep)
-%ANIME_SHOW ÖðÖ¡ÏÔÊ¾µãÔÆ
-%   clouds µãÔÆ×é
-%   timestep ²¥·ÅÖ¡¼ä¼ä¸ô£¨seconds£©£¬0ÎªÊÖ¶¯ÇÐ»»
+%ANIME_SHOW ï¿½ï¿½Ö¡ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+%   clouds ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+%   timestep ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½secondsï¿½ï¿½ï¿½ï¿½0Îªï¿½Ö¶ï¿½ï¿½Ð»ï¿½
 axes = pcshow(clouds{1});
+view(2);
 cscatter = axes.Children;
 curr_cp = axes.CameraPosition;
 curr_ct = axes.CameraTarget;
