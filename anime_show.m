@@ -3,11 +3,14 @@ function  anime_show(clouds,timestep)
 %   clouds ������
 %   timestep ����֡������seconds����0Ϊ�ֶ��л�
 axes = pcshow(clouds{1});
+
 view(2);
+axes.CameraTarget=[0,0,0];
+axes.CameraViewAngle=2.4;
 cscatter = axes.Children;
 curr_cp = axes.CameraPosition;
-curr_ct = axes.CameraTarget;
-curr_cv = axes.CameraViewAngle;
+curr_ct = [0,0,0];
+curr_cv = 2.4;
 for i=1:length(clouds)
     currPoints = clouds{i}.Location;
     cscatter.XData=currPoints(:,1);
